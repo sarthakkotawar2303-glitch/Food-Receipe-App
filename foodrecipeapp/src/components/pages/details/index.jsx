@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import GlobalState, { GlobalContext } from '../../contex'
 
-export default function Details() {
+const Details=()=>{
   const { id } = useParams()
   const { recipeDetails, setRecipeDetails, handleFav, favlist } = useContext(GlobalContext)
 
@@ -61,3 +61,4 @@ export default function Details() {
     </div>
   )
 }
+export default Details 

@@ -8,12 +8,10 @@ export default function Navbar() {
   return (
     <nav className='container mx-auto px-6 py-4 bg-gradient-to-r from-red-100 via-orange-50 to-white shadow-md rounded-xl flex flex-col lg:flex-row items-center justify-between gap-4'>
 
-      {/* Logo */}
       <h2 className='text-3xl font-extrabold text-red-500 tracking-wide drop-shadow-sm'>
         🍽️ FoodRecipe
       </h2>
 
-      {/* Search Input */}
       <form onSubmit={handleSubmit}>
         <input
           type='text'
@@ -26,7 +24,6 @@ export default function Navbar() {
 
       </form>
 
-      {/* Navigation Links */}
 
       <ul className='flex gap-6 text-base font-semibold text-gray-700'>
 

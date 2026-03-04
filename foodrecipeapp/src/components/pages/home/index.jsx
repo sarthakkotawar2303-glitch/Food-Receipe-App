@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { GlobalContext } from '../../contex'
 import RecipeList from '../../recipe-list'
 
-export default function Home() {
+const Home=()=>{
   const { recipeList, loading } = useContext(GlobalContext)
 
   if (loading) return <p className="text-center text-xl font-medium py-10">Loading...</p>
@@ -23,3 +23,4 @@ export default function Home() {
     </div>
   )
 }
+export default Home
