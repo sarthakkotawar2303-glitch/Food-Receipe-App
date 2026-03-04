@@ -50,7 +50,7 @@ const Details=()=>{
       <div>
         <span className="text-lg font-semibold text-gray-900">Ingredients</span>
         <ul className="list-disc pl-6 mt-2 space-y-2 text-gray-700">
-          {recipeDetails?.recipe?.ingredients.map((item, index) =>
+          {recipeDetails?.recipe?.ingredients?.map((item, index) =>
             <li key={index}>
               <span className="font-medium">{item.quantity} {item.unit}</span>
               <span> {item.description}</span>
